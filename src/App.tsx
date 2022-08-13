@@ -4,9 +4,11 @@ import { Header } from "./components/Header";
 
 const App = () => {
   return (
-    <div className="wrapper-application container">
+    <div className="container">
       <Header />
-      
+      <main>
+        {/* основной контент */}
+      </main>
       <Footer />
     </div>
   );
