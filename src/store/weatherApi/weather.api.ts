@@ -18,7 +18,8 @@ export const weatherApi = createApi({
 
                 params: {
                     q: search,
-                    appid: '3ab1a9998114dafe457fc2c22ae5badd'
+                    appid: '3ab1a9998114dafe457fc2c22ae5badd',
+                    units: 'metric'
                     // per_page: 10
                 }
             }),
