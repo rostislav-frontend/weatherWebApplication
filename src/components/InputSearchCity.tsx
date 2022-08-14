@@ -17,6 +17,7 @@ export const InputSearchCity = () => {
         // refetchOnFocus: true
     })
 
+    console.log(data);
     
 
 
@@ -30,15 +31,7 @@ export const InputSearchCity = () => {
                 onChange={(event) => setSearchCity(event.target.value)}
             />
             {isLoading && <h2>Идет загрузка</h2>}
-            {data?.map((weather : any) => (
-            <span
-              key={weather.id}
-              className='py-2 px-4 hover:bg-gray-500 hover:text-white transition-colors cursor-pointer'
-            >
-              {weather.weather.id}
-              {weather}
-            </span>
-          ))}
+
 
 
         </div>

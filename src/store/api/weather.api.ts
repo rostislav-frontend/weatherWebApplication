@@ -22,7 +22,7 @@ export const weatherApi = createApi({
                     // per_page: 10
                 }
             }),
-            transformResponse: (response: any) => response.items
+
         }),
     })
 })
