@@ -1,5 +1,6 @@
 
 import { createApi, fetchBaseQuery }  from '@reduxjs/toolkit/query/react'
+import { IWeather } from './weather.type'
 
 export const weatherApi = createApi({
     reducerPath: 'weatherApi',
@@ -11,8 +12,7 @@ export const weatherApi = createApi({
     endpoints: build => ({
         
         
-        // дженерики ts
-        searchCity: build.query<any, any>({
+        searchCity: build.query<IWeather, string>({
             query: (search: string) => ({
                 url: `weather/`,
 
