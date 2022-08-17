@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { useDebounce } from "../hooks/debounce"
-import { useSearchCityQuery } from "../store/weatherApi/weather.api"
+import { useSearchCityQuery } from "../store/weather/weather.api"
 
 export const InputSearchCity = () => {
 
