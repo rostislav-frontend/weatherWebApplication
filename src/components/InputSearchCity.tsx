@@ -2,6 +2,8 @@ import { useState } from "react"
 import { useDebounce } from "../hooks/debounce"
 import { useSearchCityQuery } from "../store/weather/weather.api"
 
+import iconsSearch from "../icons/magnifyingGlass.svg";
+
 export const InputSearchCity = () => {
 
     const [searchCity, setSearchCity] = useState('Moscow')
@@ -22,17 +24,17 @@ export const InputSearchCity = () => {
 
 
     return (
-        <>
+        <div className='inputSearch__container'>
             <input
-                className='border py-1 px-4  mb-2 focus:outline-none'
+                className='inputSearch__input'
                 type="text"
                 placeholder="Введите свой город"
                 value={searchCity}
                 onChange={(event) => setSearchCity(event.target.value)}
             />
             {/* {isLoading && <h2>Идет загрузка</h2>} */}
-
-        </>
+            <img className='lg:w-[30px] lg:h-[30px]' src={iconsSearch} alt="" />
+        </div>
 
 
     )
