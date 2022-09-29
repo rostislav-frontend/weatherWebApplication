@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import { CurrencyWeather } from "./components/CurrencyWeather";
-import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { CurrencyWeather } from "./pages/CurrencyWeather";
 
 
 const App = () => {

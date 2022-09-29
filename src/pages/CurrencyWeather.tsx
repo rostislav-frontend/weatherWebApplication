@@ -1,7 +1,6 @@
 
 
 export const CurrencyWeather = () => {
-
     return (
         <section className="currency-weather pt-[50px]">
             <div className="currency-weather__title">
